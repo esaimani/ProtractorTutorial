@@ -5,15 +5,25 @@ import { calculatorPage } from '../tsPages/calculatorPage';
 describe('Learn Locator', function () {
     it('Locator Concepts', async () => {
 
+        //Delete All Cookies
+        await browser.manage().deleteAllCookies(); 
         
-        await browser.manage().deleteAllCookies(); //Delete All Cookies
-        await browser.get('http://juliemr.github.io/protractor-demo/'); //Launch http://juliemr.github.io/protractor-demo/ website
-        await calculation(10, 20, "ADDITION"); //Function to perform Addition
-        await calculation(10, 30, "MULTIPLICATION"); //Function to perform Multiplication
+        //Launch http://juliemr.github.io/protractor-demo/ website
+        await browser.get('http://juliemr.github.io/protractor-demo/'); 
+        
+        //Function to perform Addition
+        await calculation(10, 20, "ADDITION");
+        
+        //Function to perform Multiplication
+        await calculation(10, 30, "MULTIPLICATION"); 
+
+        //Method to print "Finally Done"
         console.log("Finally Done");
+
+        //Fecthing Result from Grid
         await element.all(By.repeater("result in memory")).each(function (item) {
             item.element(By.css("td:nth-child(3)")).getText().then(function (text) {
-                console.log(text); //Fecthing Result from Grid
+                console.log(text); 
             });
         });
 
