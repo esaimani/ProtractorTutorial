@@ -10,6 +10,7 @@ Examples:
 |10|15|
 |10|30|
 
+@Calculator
 Scenario Outline: Perform Given Operation
 Given Open the Calculator
 And Enter the two numbers as "<num1>" and "<num2>"

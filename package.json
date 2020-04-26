@@ -5,7 +5,7 @@
   "scripts": {
     "test": "protractor tsConfigs/config.js ",
     "pretest": "tsc",
-    "cucumbertest": "protractor cucumberConfigs/cucumberconfig.js ",
+    "cucumbertest": "protractor convertedJSFiles/cucumberConfigs/cucumberconfig.js ",
     "precucumbertest": "tsc",
     "protractor": "./node_mosules/protractor/built/cli.js",
     "webdriver-update": "./node_modules/.bin/webdriver-manager update"
@@ -21,9 +21,13 @@
     "protractor": "^5.4.4",
     "protractor-cucumber-framework": "6.2.1",
     "cucumber": "6.0.5",
-    "@types/cucumber": "6.0.1"
+    "@types/cucumber": "6.0.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "cucumber-html-reporter": "^5.2.0",
     "mocha": "^7.1.1"
   },
   "description": ""
