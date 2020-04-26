@@ -7,7 +7,7 @@ exports.config = {
       browserName: 'chrome',
       acceptInsecureCerts : true
     },
-    specs: ['../cucumberfeatures/demo.feature'],
+    specs: ['../cucumberFeatures/calculator.feature'],
     cucumberOpts: {
       // require step definitions
       require: [

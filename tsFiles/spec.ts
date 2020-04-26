@@ -1,5 +1,5 @@
 import { browser, element, By } from 'protractor'
-import { calculatorPage } from '../tsPages/calculatorPage';
+import { calculatorPage } from '../cucumberPages/calculatorPage';
 
 
 describe('Learn Locator', function () {
