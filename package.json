@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "protractor tsConfigs/config.js ",
+    "test": "protractor convertedJSFiles/tsConfigs/config.js ",
     "pretest": "tsc",
     "cucumbertest": "protractor convertedJSFiles/cucumberConfigs/cucumberconfig.js ",
     "precucumbertest": "tsc",
